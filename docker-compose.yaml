@@ -1,0 +1,9 @@
+version: "3"
+services:
+  resume_extractor:
+    container_name: resume-extractor
+    build: .
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/app
